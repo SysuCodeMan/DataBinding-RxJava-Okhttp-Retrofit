@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="courseScoreItem"
+            type="com.example.chen.coursequery.vm.CourseScoreItemVM"/>
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/courseName"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="@{courseScoreItem.courseName}"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/courseGpa"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="@{courseScoreItem.gpa}"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/courseRank"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="@{courseScoreItem.rank}"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/courseTeacherName"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="@{courseScoreItem.teacherName}"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</layout>
